@@ -73,10 +73,10 @@ fn part2_shape(enemy_shape: &Shape, s: &str) -> Shape {
         _ => Lose,
     };
 
-    return shape_for_desired_outcome_for(enemy_shape, &outcome);
+    return shape_for_desired_outcome(enemy_shape, &outcome);
 }
 
-fn shape_for_desired_outcome_for(s: &Shape, desired_outcome: &Outcome) -> Shape {
+fn shape_for_desired_outcome(s: &Shape, desired_outcome: &Outcome) -> Shape {
     return match *s {
         Rock => match *desired_outcome {
             Win => Paper,
