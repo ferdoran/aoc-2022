@@ -1,8 +1,5 @@
-use std::collections::HashMap;
 use std::fs;
-use std::iter::Filter;
 use std::ops::RangeInclusive;
-
 
 fn main() {
     let input = fs::read_to_string("./src/bin/04-camp-cleanup/input.txt");
